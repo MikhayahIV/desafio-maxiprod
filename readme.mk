@@ -4,21 +4,6 @@ Sistema Full Stack desenvolvido como solução para um desafio técnico de geren
 
 ---
 
-## 📑 Índice
-
-- [Visão Geral](#-visão-geral)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Arquitetura e Boas Práticas](#%EF%B8%8F-arquitetura-e-boas-práticas)
-- [Funcionalidades](#-funcionalidades)
-- [Destaques Técnicos](#-destaques-técnicos)
-- [Como Executar o Projeto](#%EF%B8%8F-como-executar-o-projeto)
-- [Fluxo da Aplicação](#-fluxo-da-aplicação)
-- [Conceitos Demonstrados](#-conceitos-demonstrados)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Licença](#-licença)
-
----
-
 ## 📖 Visão Geral
 
 O sistema foi desenvolvido utilizando uma arquitetura organizada em camadas, separando responsabilidades entre API, regras de negócio e interface do usuário.
