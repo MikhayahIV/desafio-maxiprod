@@ -20,12 +20,14 @@ Sistema Full Stack desenvolvido como solução para um desafio técnico de geren
 ## 📑 Índice
 
 - [Visão Geral](#-visão-geral)
-- [Tecnologias](#-tecnologias-utilizadas)
-- [Arquitetura](#-arquitetura-e-boas-práticas)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Arquitetura e Boas Práticas](#-arquitetura-e-boas-práticas)
 - [Funcionalidades](#-funcionalidades)
-- [Como Executar](#-como-executar-o-projeto)
-- [Fluxo da Aplicação](#-fluxo-da-aplicação)
 - [Destaques Técnicos](#-destaques-técnicos)
+- [Como Executar o Projeto](#-como-executar-o-projeto)
+- [Fluxo da Aplicação](#-fluxo-da-aplicação)
+- [Conceitos Demonstrados](#-conceitos-demonstrados)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
 - [Licença](#-licença)
 
 ---
