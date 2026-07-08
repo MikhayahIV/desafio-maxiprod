@@ -1,14 +1,5 @@
 # 🏠 Sistema de Controle de Gastos Residenciais
 
-[![.NET](https://img.shields.io/badge/.NET-8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
-[![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/)
-[![Entity Framework Core](https://img.shields.io/badge/Entity_Framework_Core-6C3483?style=for-the-badge)](https://learn.microsoft.com/ef/core/)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge)](https://axios-http.com/)
-[![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-
 Sistema Full Stack desenvolvido como solução para um desafio técnico de gerenciamento financeiro compartilhado entre moradores de uma residência. A aplicação permite cadastrar pessoas, registrar receitas e despesas, aplicar regras de negócio e visualizar um relatório consolidado com os saldos individuais e o balanço geral da residência.
 
 ---
