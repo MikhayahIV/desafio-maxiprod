@@ -1,9 +1,19 @@
-#🏠 Sistema de Controle de Gastos Residenciais
+# 🏠 Sistema de Controle de Gastos Residenciais
+
+[![.NET](https://img.shields.io/badge/.NET-8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+[![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/)
+[![Entity Framework Core](https://img.shields.io/badge/Entity_Framework_Core-6C3483?style=for-the-badge)](https://learn.microsoft.com/ef/core/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge)](https://axios-http.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+
 Sistema Full Stack desenvolvido como solução para um desafio técnico de gerenciamento financeiro compartilhado entre moradores de uma residência. A aplicação permite cadastrar pessoas, registrar receitas e despesas, aplicar regras de negócio e visualizar um relatório consolidado com os saldos individuais e o balanço geral da residência.
 
 ---
 
-##📑 Índice
+## 📑 Índice
 
 - [Visão Geral](#-visão-geral)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
@@ -18,7 +28,7 @@ Sistema Full Stack desenvolvido como solução para um desafio técnico de geren
 
 ---
 
-##📖 Visão Geral
+## 📖 Visão Geral
 
 O sistema foi desenvolvido utilizando uma arquitetura organizada em camadas, separando responsabilidades entre API, regras de negócio e interface do usuário.
 
@@ -31,16 +41,16 @@ A aplicação permite:
 
 ---
 
-##🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
-###Back-end
+### Back-end
 - **Runtime:** .NET 8
 - **Framework:** ASP.NET Core Web API
 - **Linguagem:** C#
 - **ORM:** Entity Framework Core
 - **Banco de Dados:** SQLite / PostgreSQL
 
-###Front-end
+### Front-end
 - **Biblioteca Base:** React
 - **Linguagem:** TypeScript
 - **Cliente HTTP:** Axios
@@ -49,24 +59,24 @@ A aplicação permite:
 
 ---
 
-##🏛️ Arquitetura e Boas Práticas
+## 🏛️ Arquitetura e Boas Práticas
 
 A aplicação foi construída seguindo princípios SOLID, focando em organização, legibilidade e manutenibilidade do ecossistema.
 
-###✔️ Separação de Camadas
+### ✔️ Separação de Camadas
 O projeto isola de forma clara as suas responsabilidades em:
 - **Controllers:** Exposição dos endpoints REST e controle de fluxo.
 - **Models:** Definição das entidades de domínio e mapeamento de dados.
 - **DTOs (Data Transfer Objects):** Estruturação customizada para transferência de dados sem expor entidades brutas do banco de dados.
 - **Data/DbContext:** Configuração da persistência e mapeamentos do ORM.
 
-###✔️ DTOs (Data Transfer Objects)
+### ✔️ DTOs (Data Transfer Objects)
 Os DTOs foram peças-chave no desenvolvimento para:
 - Evitar a exposição direta do modelo físico de dados;
 - Formatar as respostas sob medida para o painel do Front-end;
 - Consolidar as queries de relatório (agregação de receitas, despesas e saldos calculados).
 
-###✔️ Validação em Duas Camadas (Dual-Layer Validation)
+### ✔️ Validação em Duas Camadas (Dual-Layer Validation)
 A principal regra de negócio foi replicada simetricamente no cliente e no servidor.
 
 > **Regra de Negócio:** Pessoas menores de 18 anos não podem cadastrar Receitas.
@@ -76,7 +86,7 @@ A principal regra de negócio foi replicada simetricamente no cliente e no servi
 
 ---
 
-##✨ Funcionalidades
+## ✨ Funcionalidades
 
 - ✅ Cadastro de moradores (Membros da residência)
 - ✅ Listagem em tempo real de moradores
@@ -91,27 +101,27 @@ A principal regra de negócio foi replicada simetricamente no cliente e no servi
 
 ---
 
-##💡 Destaques Técnicos
+## 💡 Destaques Técnicos
 
-###🔥 Deleção em Cascata (Cascade Delete)
+### 🔥 Deleção em Cascata (Cascade Delete)
 Para cumprir estritamente o requisito de que a exclusão de um membro remova seu histórico financeiro, configuramos o relacionamento no Entity Framework Core para aplicar deleção em cascata automaticamente a nível de banco de dados.
 
-###🔥 Tipagem Forte de Ponta a Ponta
+### 🔥 Tipagem Forte de Ponta a Ponta
 O Front-end em TypeScript consome contratos de tipos e interfaces que espelham perfeitamente os DTOs gerados pela API em C#, mitigando erros em tempo de desenvolvimento e garantindo refatorações seguras.
 
-###🔥 Comunicação Segura via CORS
+### 🔥 Comunicação Segura via CORS
 Pipeline do ASP.NET Core configurado explicitamente com políticas de CORS restritas para permitir o consumo seguro de recursos pelo servidor de desenvolvimento do Vite/React.
 
 ---
 
-##🛠️ Como Executar o Projeto
+## 🛠️ Como Executar o Projeto
 
-###Pré-requisitos
+### Pré-requisitos
 - .NET SDK 8+
 - Node.js (v18+)
 - npm ou yarn
 
-###Executando o Back-end
+### Executando o Back-end
 
 1. Entre na pasta da API:
 ```bash
